@@ -142,7 +142,7 @@ namespace kangjia
         private string up_resVersion_url = yoyoConst.KANGJIA_MAIN_PATH + "\\backup\\kangjiamainVersion\\";
         #endregion
 
-        #endregion
+        #endregion 
 
         #region 构造函数load
         [DllImport("user32.dll", EntryPoint = "ShowCursor", CharSet = CharSet.Auto)]

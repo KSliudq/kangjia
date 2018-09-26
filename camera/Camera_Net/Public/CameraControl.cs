@@ -69,7 +69,7 @@ namespace Camera_NET
         {
             // Close current if it was opened
             CloseCamera();
-
+           
             if (moniker == null)
                 return;
 

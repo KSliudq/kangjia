@@ -34,6 +34,8 @@ namespace kangjia
     {
         #region 变量old2
         #region 摄像头变量       
+        int a = 0;
+      
         CameraChoice _CameraChoice = new CameraChoice();
         //是否正在人脸识别
         private bool Face_checking = false;

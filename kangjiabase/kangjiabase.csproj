@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B5C49C40-9D5B-437C-948D-174CFDFA731B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>kangjiabase</RootNamespace>
+    <AssemblyName>kangjiabase</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="device\command\Command.cs" />
+    <Compile Include="device\command\CommandBroker.cs" />
+    <Compile Include="device\command\CommandManager.cs" />
+    <Compile Include="device\command\device\Cmd_X_BootShut.cs" />
+    <Compile Include="device\command\device\Cmd_X_Check.cs" />
+    <Compile Include="device\command\device\Cmd_X_Green.cs" />
+    <Compile Include="device\command\device\Cmd_X_Lock.cs" />
+    <Compile Include="device\command\device\Cmd_X_Persent.cs" />
+    <Compile Include="device\command\device\Cmd_X_ReBoot.cs" />
+    <Compile Include="device\command\device\Cmd_X_Report.cs" />
+    <Compile Include="device\command\device\Cmd_X_ReportErr.cs" />
+    <Compile Include="device\command\device\Cmd_X_Reset.cs" />
+    <Compile Include="device\command\device\Cmd_X_Settime.cs" />
+    <Compile Include="device\command\device\Cmd_X_Sex.cs" />
+    <Compile Include="device\command\device\Cmd_X_Start.cs" />
+    <Compile Include="device\command\device\Cmd_X_TimingPower.cs" />
+    <Compile Include="device\command\device\Cmd_X_Tuch.cs" />
+    <Compile Include="device\command\device\Cmd_X_Upgrade.cs" />
+    <Compile Include="device\command\host\Cmd_S_Boot.cs" />
+    <Compile Include="device\command\host\Cmd_S_Check.cs" />
+    <Compile Include="device\command\host\Cmd_S_Green.cs" />
+    <Compile Include="device\command\host\Cmd_S_Green2.cs" />
+    <Compile Include="device\command\host\Cmd_S_Lock.cs" />
+    <Compile Include="device\command\host\Cmd_S_ReBoot.cs" />
+    <Compile Include="device\command\host\Cmd_S_Report.cs" />
+    <Compile Include="device\command\host\Cmd_S_ReportErr.cs" />
+    <Compile Include="device\command\host\Cmd_S_Settime.cs" />
+    <Compile Include="device\command\host\Cmd_S_Sex.cs" />
+    <Compile Include="device\command\host\Cmd_S_Shut.cs" />
+    <Compile Include="device\command\host\Cmd_S_Start.cs" />
+    <Compile Include="device\command\host\Cmd_S_TimingPower.cs" />
+    <Compile Include="device\command\host\Cmd_S_UpgradeFinish.cs" />
+    <Compile Include="device\command\host\Cmd_S_UpgradeStart.cs" />
+    <Compile Include="device\command\updevice\Cmd_X_GetData.cs" />
+    <Compile Include="device\command\updevice\Cmd_X_GetNew.cs" />
+    <Compile Include="device\command\updevice\Cmd_X_Ready.cs" />
+    <Compile Include="device\command\updevice\Cmd_X_SN.cs" />
+    <Compile Include="device\command\updevice\Cmd_X_Success.cs" />
+    <Compile Include="device\command\updevice\Cmd_X_UpdateSuccess.cs" />
+    <Compile Include="device\command\uphost\Cmd_S_GetData.cs" />
+    <Compile Include="device\command\uphost\Cmd_S_GetNew.cs" />
+    <Compile Include="device\command\uphost\Cmd_S_Ready.cs" />
+    <Compile Include="device\command\uphost\Cmd_S_SN.cs" />
+    <Compile Include="device\command\uphost\Cmd_S_Success.cs" />
+    <Compile Include="device\command\uphost\Cmd_S_UpdateSuccess.cs" />
+    <Compile Include="device\DeviceHelper.cs" />
+    <Compile Include="device\DeviceManager.cs" />
+    <Compile Include="helper\AFDFunction.cs" />
+    <Compile Include="helper\DatetimeHelper.cs" />
+    <Compile Include="helper\FileHelper.cs" />
+    <Compile Include="helper\flashmodel.cs" />
+    <Compile Include="helper\FtpUpLoadFiles.cs" />
+    <Compile Include="helper\Internet.cs" />
+    <Compile Include="helper\LogisTrac.cs" />
+    <Compile Include="helper\NetTools.cs" />
+    <Compile Include="helper\OperateIniFile.cs" />
+    <Compile Include="helper\yoyoConst.cs" />
+    <Compile Include="http\htConst.cs" />
+    <Compile Include="http\JsonHelper.cs" />
+    <Compile Include="http\model\htBaseModel.cs" />
+    <Compile Include="http\model\htIV2_IFI03.cs" />
+    <Compile Include="http\model\htlocation.cs" />
+    <Compile Include="http\model\htLog.cs" />
+    <Compile Include="http\model\htprinter.cs" />
+    <Compile Include="http\model\htRegisterV1R01.cs" />
+    <Compile Include="http\model\htReport.cs" />
+    <Compile Include="http\model\htReportUserbean.cs" />
+    <Compile Include="http\model\htV1UploadU01.cs" />
+    <Compile Include="http\model\retBaseRet.cs" />
+    <Compile Include="http\model\retIFI02.cs" />
+    <Compile Include="http\model\retIFI02User.cs" />
+    <Compile Include="http\model\retIFI03.cs" />
+    <Compile Include="http\model\retIFI05.cs" />
+    <Compile Include="http\model\retIToken.cs" />
+    <Compile Include="http\model\retITokenData.cs" />
+    <Compile Include="http\model\retV1UploadU01.cs" />
+    <Compile Include="http\model\retV1UploadU01Data.cs" />
+    <Compile Include="http\model\retV2IFI03.cs" />
+    <Compile Include="http\model\retV2IFI03Data.cs" />
+    <Compile Include="http\model\retV2IFI03Mqtt.cs" />
+    <Compile Include="http\retmodel\htRetBasemodel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

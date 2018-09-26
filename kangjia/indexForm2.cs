@@ -32,7 +32,7 @@ namespace kangjia
 {
     public partial class indexForm2 : Form
     {
-        #region 变量1234
+        #region 变111量1234
         #region 摄像头变量
         CameraChoice _CameraChoice = new CameraChoice();
         //是否正在人脸识别
